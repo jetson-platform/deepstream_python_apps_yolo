@@ -1,4 +1,6 @@
-# Use the YOLOv5 model in deepstream_python_apps
+# Use the YOLOv5 model in [deepstream_python_apps](https://github.com/NVIDIA-AI-IOT/deepstream_python_apps)
+
+## After this steps [LINK](https://github.com/CV-Jetson-Nano/YOLOv5_install_deepstream)
 
 ## git clone deepstream_python_apps
 
@@ -6,6 +8,19 @@
 cd ~
 git clone --branch v1.1.1 https://github.com/NVIDIA-AI-IOT/deepstream_python_apps.git
 ```
+
+## Install Necessary Packages
+
+```bash
+sudo apt install libgirepository1.0-dev gcc libcairo2-dev pkg-config python3-dev gir1.2-gtk-3.0
+
+pip3 install pycairo
+
+pip3 install PyGObject
+
+pip3 install pyds-ext
+```
+
 ## Change model confugiration
 
 ```bash
