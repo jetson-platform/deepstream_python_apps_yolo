@@ -40,11 +40,6 @@ cp ~/DeepStream-Yolo/labels.txt ./
 
 cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4
 ```
-## Run the Inference 
-
-```bash
-python deepstream_test_1.py sample_1080p_h264.mp4
-```
 
 implement this file deepstream_test_1.py
 according to this steps
@@ -94,4 +89,10 @@ py_nvosd_text_params.display_text = "Frame Number={} Number of Objects={} Vehicl
 # to
 
 py_nvosd_text_params.display_text = "Person_count={}".format( obj_counter[PGIE_CLASS_ID_PERSON])
+```
+
+## Run the Inference 
+
+```bash
+python deepstream_test_1.py sample_1080p_h264.mp4
 ```
