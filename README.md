@@ -45,3 +45,53 @@ cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4
 ```bash
 python deepstream_test_1.py sample_1080p_h264.mp4
 ```
+
+implement this file deepstream_test_1.py
+according to this steps
+
+step 1:
+```python
+
+PGIE_CLASS_ID_VEHICLE = 0
+PGIE_CLASS_ID_BICYCLE = 1
+PGIE_CLASS_ID_PERSON = 2
+PGIE_CLASS_ID_ROADSIGN = 3
+
+# to
+
+PGIE_CLASS_ID_PERSON = 0
+```
+
+step 2:
+```python
+obj_counter = {
+        PGIE_CLASS_ID_VEHICLE:0,
+        PGIE_CLASS_ID_PERSON:0,
+        PGIE_CLASS_ID_BICYCLE:0,
+        PGIE_CLASS_ID_ROADSIGN:0
+    }
+
+# to
+
+obj_counter = {
+        PGIE_CLASS_ID_PERSON:0
+    }
+```
+
+step 3:
+```python
+obj_counter[obj_meta.class_id] += 1
+
+# to
+
+obj_counter[0] += 1
+```
+
+step 4:
+```python
+py_nvosd_text_params.display_text = "Frame Number={} Number of Objects={} Vehicle_count={} Person_count={}".format(frame_number, num_rects, obj_counter[PGIE_CLASS_ID_VEHICLE], obj_counter[PGIE_CLASS_ID_PERSON])
+
+# to
+
+py_nvosd_text_params.display_text = "Person_count={}".format( obj_counter[PGIE_CLASS_ID_PERSON])
+```
