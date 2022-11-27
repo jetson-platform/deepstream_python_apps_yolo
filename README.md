@@ -38,7 +38,7 @@ cp ~/DeepStream-Yolo/nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
 
 cp ~/DeepStream-Yolo/labels.txt ./
 
-cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4
+cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 ./
 ```
 
 ## implement this file deepstream_test_1.py
