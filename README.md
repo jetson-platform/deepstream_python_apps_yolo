@@ -21,7 +21,7 @@ pip3 install PyGObject
 pip3 install pyds-ext
 ```
 
-## Change model confugiration
+## Change model configuration
 
 ```bash
 cd deepstream_python_apps/apps/deepstream-test1
