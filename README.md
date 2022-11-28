@@ -38,7 +38,7 @@ cp ~/DeepStream-Yolo/nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
 
 cp ~/DeepStream-Yolo/labels.txt ./
 
-cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_1080p_h264.mp4 ./
+cp ~/opt/nvidia/deepstream/deepstream/samples/streams/sample_720.h264 ./
 ```
 
 ## implement this file deepstream_test_1.py
@@ -94,5 +94,5 @@ py_nvosd_text_params.display_text = "Person_count={}".format( obj_counter[PGIE_C
 ## Run the Inference 
 
 ```bash
-python deepstream_test_1.py sample_1080p_h264.mp4
+python deepstream_test_1.py sample_720.h264
 ```
