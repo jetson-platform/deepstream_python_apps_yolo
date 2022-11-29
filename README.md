@@ -105,6 +105,9 @@ python3 deepstream_test_3.py <uri1> [uri2] ... [uriN]
 e.g:
 ```bash
 python3 deepstream_test_3.py file:///opt/nvidia/deepstream/deepstream-6.0/samples/streams/sample_720p.mp4
+# NOTE:
+# Give absolute path, relative path is not supported
 
 python3 deepstream_test_3.py rtsp://admin:888888aa@192.168.0.31
 ```
+
