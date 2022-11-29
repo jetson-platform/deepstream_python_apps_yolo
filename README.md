@@ -96,3 +96,15 @@ py_nvosd_text_params.display_text = "Person_count={}".format( obj_counter[PGIE_C
 ```bash
 python deepstream_test_1.py sample_720.h264
 ```
+
+# To run RTSP url or .mp4
+
+```bash
+python3 deepstream_test_3.py <uri1> [uri2] ... [uriN]
+```
+e.g:
+```bash
+python3 deepstream_test_3.py file:///opt/nvidia/deepstream/deepstream-6.0/samples/streams/sample_720p.mp4
+
+python3 deepstream_test_3.py rtsp://admin:888888aa@192.168.0.31
+```
